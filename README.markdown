@@ -16,7 +16,7 @@ will be raised.
 
 Open an URL, retry up to two times when an `OpenURI::HTTPError` occurs.
 
-    retryable( :tries => 3, :on => OpenURI:HTTPError ) do
+    retryable( :tries => 3, :on => OpenURI::HTTPError ) do
       xml = open( xml_url ).read
     end
 
