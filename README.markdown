@@ -14,14 +14,14 @@ will be raised.
 
 ## Examples
 
-1. Open an URL, retry up to two times when an `OpenURI::HTTPError` occurs.
+Open an URL, retry up to two times when an `OpenURI::HTTPError` occurs.
 
     retryable( :tries => 3, :on => OpenURI:HTTPError ) do
       xml = open( xml_url ).read
     end
 
-2. Do _something_, retry up to four times for either `ArgumentError` or
-   `TimeoutError` exceptions.
+Do _something_, retry up to four times for either `ArgumentError` or 
+`TimeoutError` exceptions.
 
     retryable( :tries => 5, :on => [ ArgumentError, TimeoutError ] ) do
       # some crazy code
