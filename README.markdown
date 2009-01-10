@@ -9,7 +9,7 @@ It's configured using two optional parameters --`:tries` and `:on`--, and
 runs the passed block. Should an exception occur, it'll retry for (n-1) times.
 
 Should the number of retries be reached without success, the last exception
-will be returned/raised.
+will be raised.
 
 
 ## Examples
@@ -39,4 +39,14 @@ First, [make sure GitHub is a gem source](http://gems.github.com/). Then, instal
 
     sudo gem install carlo-retryable
     
+
+## Todo
+
+* Unit tests
+
+
+## Thanks
+
+Many thanks to [Chu Yeow for this nifty piece of code](http://blog.codefront.net/2008/01/14/retrying-code-blocks-in-ruby-on-exceptions-whatever/). Look, I liked it
+enough to enhance it a little bit and build a gem from it! :)
 
