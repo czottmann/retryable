@@ -6,8 +6,8 @@ Gem::Specification.new do |s|
   s.email         = "carlo@zottmann.org"
   s.homepage      = "http://github.com/carlo/retryable/tree/master"
   s.summary       = "Kernel#retryable, allow for retrying of code blocks."
-  s.files         = FileList['lib/*.rb', 'tests/*'].to_a
+  s.files         = FileList['lib/*.rb', 'test/*'].to_a
   s.require_path  = "lib"
-  s.test_files    = Dir.glob('tests/*.rb')
+  s.test_files    = Dir.glob('test/*.rb')
   s.has_rdoc      = false
 end
