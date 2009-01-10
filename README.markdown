@@ -1,6 +1,6 @@
 # Kernel#retryable
 
-### Description
+## Description
 
 Runs a code block, and retries it when an exception occurs. It's great when
 working with flakey webservices (for example).
@@ -12,7 +12,7 @@ Should the number of retries be reached without success, the last exception
 will be raised.
 
 
-### Examples
+## Examples
 
 Open an URL, retry up to two times when an `OpenURI::HTTPError` occurs.
 
@@ -28,24 +28,24 @@ Do _something_, retry up to four times for either `ArgumentError` or
     end
 
 
-### Defaults
+## Defaults
 
     :tries => 1, :on => Exception
     
-
-### Installation
+  
+## Installation
 
 First, [make sure GitHub is a gem source](http://gems.github.com/). Then, install the gem:
 
     sudo gem install carlo-retryable
     
 
-### Todo
+## Todo
 
 * Unit tests
 
 
-### Thanks
+## Thanks
 
 Many thanks to [Chu Yeow for this nifty piece of code](http://blog.codefront.net/2008/01/14/retrying-code-blocks-in-ruby-on-exceptions-whatever/). Look, I liked it
 enough to enhance it a little bit and build a gem from it! :)
