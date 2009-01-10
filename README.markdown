@@ -16,8 +16,10 @@ will be raised.
 
 Open an URL, retry up to two times when an `OpenURI::HTTPError` occurs.
 
+    require "open-uri"
+    
     retryable( :tries => 3, :on => OpenURI::HTTPError ) do
-      xml = open( xml_url ).read
+      xml = open( "http://example.com/test.xml" ).read
     end
 
 Do _something_, retry up to four times for either `ArgumentError` or 
