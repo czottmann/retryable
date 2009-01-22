@@ -16,6 +16,7 @@ will be raised.
 
 Open an URL, retry up to two times when an `OpenURI::HTTPError` occurs.
 
+    require "retryable"
     require "open-uri"
     
     retryable( :tries => 3, :on => OpenURI::HTTPError ) do
@@ -24,6 +25,8 @@ Open an URL, retry up to two times when an `OpenURI::HTTPError` occurs.
 
 Do _something_, retry up to four times for either `ArgumentError` or 
 `TimeoutError` exceptions.
+
+    require "retryable"
 
     retryable( :tries => 5, :on => [ ArgumentError, TimeoutError ] ) do
       # some crazy code
