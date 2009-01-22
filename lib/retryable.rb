@@ -4,15 +4,16 @@
 
 def retryable( options = {}, &block )
   opts = { :tries => 1, :on => Exception }.merge(options)
- 
-  retry_exception, retries = [ opts[:on] ].flatten, opts[:tries]
+
+  return nil if opts[:tries] == 0
+  
+  retry_exception, tries = [ opts[:on] ].flatten, opts[:tries]
  
   begin
     return yield
   rescue *retry_exception
-    retry if (retries -= 1) > 0
+    retry if (tries -= 1) > 0
   end
  
   yield
 end
-

@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name          = "retryable"
-  s.version       = "1.1"
+  s.version       = "1.2"
   s.authors       = [ "Carlo Zottmann", "Chu Yeow" ]
   s.email         = "carlo@zottmann.org"
   s.homepage      = "http://github.com/carlo/retryable"

@@ -47,6 +47,12 @@ First, [make sure GitHub is a gem source](http://gems.github.com/). Then, instal
 * Unit tests
 
 
+## Changelog
+
+*   1.2: FIX -- block would run twice when `:tries` was set to `0`. (Thanks for the
+    heads-up to [Tuker](http://github.com/tuker).)
+
+
 ## Thanks
 
 Many thanks to [Chu Yeow for this nifty piece of code](http://blog.codefront.net/2008/01/14/retrying-code-blocks-in-ruby-on-exceptions-whatever/). Look, I liked it
