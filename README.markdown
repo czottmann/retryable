@@ -49,7 +49,7 @@ First, [make sure GitHub is a gem source](http://gems.github.com/). Then, instal
 
 ## Changelog
 
-*   1.2: FIX -- block would run twice when `:tries` was set to `0`. (Thanks for the
+*   v1.2: FIX -- block would run twice when `:tries` was set to `0`. (Thanks for the
     heads-up to [Tuker](http://github.com/tuker).)
 
 
