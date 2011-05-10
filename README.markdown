@@ -1,5 +1,9 @@
 # Kernel#retryable
 
+
+**PlEASE NOTE: Kernel#retryable has a [new home!](https://github.com/nfedyashev/retryable)**
+
+
 ## Description
 
 Runs a code block, and retries it when an exception occurs. It's great when
