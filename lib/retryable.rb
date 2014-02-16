@@ -12,7 +12,10 @@ def retryable( options = {}, &block )
   begin
     return yield
   rescue *retry_exception
-    retry if (tries -= 1) > 0
+    if (tries -= 1) > 0
+      sleep(opts[:sleep]) if opts[:sleep]
+      retry
+    end
   end
  
   yield
